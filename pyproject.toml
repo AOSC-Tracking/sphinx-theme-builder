@@ -17,8 +17,6 @@ dependencies = [
   "pyproject-metadata",
   "packaging",
   "rich",        # for output styling
-  "nodeenv",     # for NodeJS isolation
-  "setuptools",  # for nodeenv
   "tomli ; python_version < '3.11'",       # for pyproject.toml parsing
   "typing_extensions ; python_version <= '3.7'", # for Protocol
 ]
@@ -44,6 +42,10 @@ cli = [
   "build",
   "click",
   "sphinx-autobuild",
+]
+nodeenv = [
+  "nodeenv",     # for NodeJS isolation
+  "setuptools",  # for nodeenv
 ]
 
 [project.urls]

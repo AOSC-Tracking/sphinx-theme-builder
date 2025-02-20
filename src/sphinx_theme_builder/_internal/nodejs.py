@@ -116,7 +116,7 @@ def _run_python_nodeenv(*args: str) -> None:
 
 
 def _should_use_system_node(node_version: str) -> bool:
-    if not _get_bool_env_var("STB_USE_SYSTEM_NODE", default=False):
+    if not _get_bool_env_var("STB_USE_SYSTEM_NODE", default=True):
         return False
 
     if sys.platform == "win32":
